@@ -1,0 +1,143 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.5) ;
+    z-index: 10;
+}
+.navbar-brand{
+    letter-spacing: 1.5px;
+}
+.navbar-brand h3{
+    display: inline-flex;
+    position: relative;
+    top: 4px;
+}
+.navbar-brand small{
+    display:inline-flex ;
+    position: relative;
+    top: 4px;
+}
+.nav-link{
+    color: #fff !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+@media screen and (max-width:600px) {
+   
+
+    .navbar-toggler{
+        display:flex;
+        margin: auto;
+        margin-left: 85%;
+        position: absolute;
+        bottom: 12px;
+        right:10px;
+    }
+    .navbar-brand{
+        letter-spacing: 1.8px;
+    }
+    .navbar-brand h3{
+        display: inline-flex;
+        position: relative;
+        top: 4px;
+    }
+    .navbar-brand small{
+        display:block ;
+        position: relative;
+        top: 4px;
+    }
+}
+body{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* content */
+#full{
+  margin-left: 10%;
+  justify-content: center;
+}
+#full h1{
+    margin-left: 35%;
+    padding: 20px 20px;
+    color: blue;
+    margin-bottom: 40px;
+    
+}
+
+.container img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+   
+}
+.container{
+    display: flex;
+    padding-bottom: 50px;
+}
+.container p{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.container h5{
+    color: blue;
+    position: relative;
+    left: 100px;
+    font-weight: 600;
+    font-size: 26px;
+}
+#leftside{
+    margin-left: -5%;
+}
+
+
+ /* footer section */
+ footer{
+    background-color: #2E3235;
+    padding-top: 50px;
+}
+.footer-title{
+    color: blue;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+footer span{
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+}
+.footer-column a{
+    padding-right: 5px;
+    color: #fff;
+}
+.social-buttons{
+    font-size: 30px;
+}
+.box{
+    margin-top: 20px;
+}
+.footer-column address{
+    margin-left: 18px;
+    color: #fff;
+    margin-top: 15px;
+}
+.footer-column address .fa-map-marker-alt{
+    font-size: 20px;
+}
+.copyright{
+    margin-top: 15px;
+}

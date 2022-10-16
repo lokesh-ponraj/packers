@@ -1,0 +1,292 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.popUp{
+    width: 400px;
+    height: 660px;
+    background-color: lightblue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-40%) scale(0.1);
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+
+.open-popUp{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-40%) scale(1);
+}
+.popUp h1,p,button{
+    text-align: center;
+}
+.popUp button{
+   margin-left: 100px;
+   padding: 10px;
+   background-color: white;
+   color: blue;
+   border-radius: 6px;
+   transition: 0.6s;
+   font-weight: 500;
+}
+.popUp button:hover{
+    background-color: blue;
+    color: #f0f0f0;
+    transition: 0.6s;
+}
+.frm{
+    display: block;
+    position: absolute;
+    left: 38%;
+    top: 30%;
+    min-height: 50vh;
+    background-color: lightsteelblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 18px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h3{
+    position: relative;
+    font-size:26px;
+    
+    color: blue;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+}
+.frm input{
+    display: block;
+}
+#form{
+    position: relative;
+}
+#form #email #name #phone #from #to{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+  
+}
+#contactus{
+    font-size: 36px;
+    
+}
+form span{
+    position: relative;
+    bottom:6px !important;
+    height: 15px;
+    
+}
+form input{
+    margin-bottom: 5px;
+    width: 300px;
+    height:38px;
+    text-indent: 8px;
+    position: sticky;
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+}
+form input:focus{
+    border: none;
+    outline: none;
+    border:2px solid blue;
+
+}
+form button{
+    width: 300px;
+    height: 35px;
+    background-color: blue;
+    color: #f0f0f0;
+    border-radius: 8px;
+    font-size: medium;
+    text-align: center;
+}
+#form #inputbox{
+    position: absolute;
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.5) ;
+    z-index: 10;
+}
+.navbar-brand{
+    letter-spacing: 1.5px;
+}
+.navbar-brand h3{
+    display: inline-flex;
+    position: relative;
+    top: 4px;
+}
+.navbar-brand small{
+    display:inline-flex ;
+    position: relative;
+    top: 4px;
+}
+.nav-link{
+    color: #fff !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+ /* footer section */
+ footer{
+    background-color: #2E3235;
+    padding-top: 50px;
+    margin-top: 50%;
+}
+.footer-title{
+    color: blue;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+footer span{
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    
+}
+.footer-column a{
+    padding-right: 5px;
+    color: #fff;
+}
+.social-buttons{
+    font-size: 30px;
+}
+.box{
+    margin-top: 20px;
+}
+.footer-column address{
+    margin-left: 18px;
+    color: #fff;
+    margin-top: 15px;
+}
+.footer-column address .fa-map-marker-alt{
+    font-size: 20px;
+}
+.copyright{
+    margin-top: 15px;
+}
+#b{
+    margin-top: 500px;
+}
+
+@media screen and (max-width:600px) {
+    .navbar{
+        position: sticky !important;
+        top: 0;
+        left: 0;
+    }
+    .navbar-brand{
+        letter-spacing: 1.8px;
+    }
+    .navbar-brand h3{
+        display: inline-flex;
+        position: relative;
+        top: 4px;
+    }
+    .navbar-brand small{
+        display:block ;
+        position: relative;
+        top: 4px;
+    }
+   .outside{
+    margin-top: 20px;
+    position: relative;
+    right: 10px;
+   margin-bottom: 0;
+   }
+   .inside{
+    position: relative;
+    left: -1%;
+    margin-top: 10px;
+   }
+   .form-input{
+    position: relative;
+    left: 2%;
+    top: 5%;
+   }
+   .form-button button{
+    position: relative;
+    top: 20px;
+    left: 160px;
+   }
+   .btn{
+    width: 70px;
+    height: 50px;
+    padding-right: 10px;
+   }
+   #a{
+    margin-top: 50px;
+   }
+   footer{
+    margin-top: 0;
+    padding-top: 50px;
+   }
+   #b{
+    margin-top: 15%;
+   }
+   .frm{
+    margin-top: 25px;
+    position: relative;
+    left: 10px;
+    margin-right: 20px;
+    }
+    .frm h3{
+        font-size: 26px;
+    }
+   
+}
+
